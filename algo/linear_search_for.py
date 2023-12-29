@@ -7,7 +7,7 @@ class linear_search():
         data_list:list = []
         
         for _ in range(range_num):
-            target_num = random.randint(50, 100)
+            target_num = random.randint(50, 80)
             data_list.append(target_num)
 
         # data_list = [random.randint(0, 1000) for _ in range(range_num)]
@@ -19,15 +19,16 @@ class linear_search():
         range_num:int = 10
 
         data_list = linear_search.create_data(range_num)
+        print(data_list)
         data_num = len(data_list)
         key = 60
 
         for i in range(data_num):
             if data_list[i] == key:
-                print("data [{0} is {1}]".format(data_list[i], key))
+                print("data_list[{0}] is {1}".format(i, key))
                 break
             else:
-                print("key{0} is Nothing".format(key))
+                print("key : {0} is Nothing".format(key))
                 continue
 
     
