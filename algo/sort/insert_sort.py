@@ -5,7 +5,16 @@ class insert_sort():
 
     def insert_sort_1():
 
-        data_llst = cd.randam_data()
+        start_num = input("select start number")
+        end_num = input("select end number")
+
+        if 0 == int(start_num):
+            len_num = (int(end_num) - int(start_num)) + 1
+        else:
+            len_num = int(end_num) - int(start_num)
+
+        data_llst = cd.randam_data(int(start_num), int(end_num), len_num)
+        print(data_llst, "created_data")
         list_num = len(data_llst)
 
         for i in range(1, list_num):
