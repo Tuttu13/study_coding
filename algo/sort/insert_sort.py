@@ -14,7 +14,7 @@ class insert_sort():
             len_num = int(end_num) - int(start_num)
 
         data_llst = cd.randam_data(int(start_num), int(end_num), len_num)
-        print(data_llst, "created_data")
+        print(data_llst, "created data")
         list_num = len(data_llst)
 
         for i in range(1, list_num):
